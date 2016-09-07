@@ -1,5 +1,5 @@
 const {app, BrowserWindow} = require('electron')
-const Highcharts = require('highcharts')
+const Highcharts = require('highcharts') // FIXME: Is there a way to get this to createchart.js so I don't have to repeat my 'require' boilerplate?
 
 let win
 
