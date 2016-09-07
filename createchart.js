@@ -1,5 +1,7 @@
-const $ = jQuery = require('./node_modules/jquery/dist/jquery.min.js')
-const Highcharts = require('./node_modules/highcharts/highcharts.js')
+const $ = jQuery = require('jquery')
+const Highcharts = require('highcharts')
+// Load highcharts data module (for CSV) into Highcharts - this is how you do it
+require('highcharts/modules/data')(Highcharts)
 
 $(document).ready(function() {
   var chart = new Highcharts.Chart({
